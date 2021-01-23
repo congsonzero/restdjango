@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Tên <b>{{name}}</b> tuổi <b>{{age}}</b></p>    
+    
+    {% for item in thongtin %}
+        {% if item != "Đại học Bách Khoa" %}
+    <ul>
+        <li>{{item}}</li>
+    </ul>
+        {% endif%}
+    {% endfor %}
+</body>
+</html>
